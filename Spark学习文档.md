@@ -26,4 +26,4 @@ Spark-Yarn的两种运行方式：yarn-client和yarn-cluster两种模式，主�
 
 ![image-20260620001417262](https://raw.githubusercontent.com/RoseYuxin/material/main/img/20260620001812959.png)
 
-RDD的处理模式和JAVA IO流完全一样，都采用装饰者模式来实现功能
+RDD的处理模式和JAVA IO流完全一样，都采用装饰者模式来实现功能;Spark在读取数据时分区设定存在三种方式:1.优先使用方法参数；2.使用配置参数parallelize(2)：spark.default.parallelism;3.采用环境默认值 setMaster("local[2]")
